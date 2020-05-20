@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Portifólio</title>
+
+    <!-- CSS AND SCRIPTS INTERNOS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site portiolio do autor Eduardo Henrique">
+    <meta name="author" content="Eduardo Henrique M. Silva">
+
+    <!-- SCRIPTS AND CSS EXTERNOS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="pizza">
+                <p>Eduardo Henrique</p>
+            </div>
+            <a class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Projetos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </div>
+        </nav>
+        <div class="header">
+
+        </div>
+
+        <script type="text/javascript">
+            $(".btn").on("click", function () {
+                $('.menu').toggleClass("show");
+            });
+        </script>
+    </header>
+</body>
+
+</html>

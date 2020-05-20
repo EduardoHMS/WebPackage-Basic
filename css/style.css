@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Squada One', cursive;
+    background-color: #181818;
+}
+
+
+.navbar {
+    position: fixed;
+    height: 70px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #181818;
+    width: 100%;
+}
+
+.logo {
+    background: url(logo.png) no-repeat 50% 50%;
+    background-size: contain;
+    width: 180px;
+    height: 18px;
+    float: left;
+    margin-left: 60px;
+    font-family: 'Sweety';
+}
+
+.menu {
+    position: absolute;
+    right: 100px;
+    
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: #6ab04c;
+    border-bottom: 5px solid #6ab04c;
+    
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+    background: url(bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    margin-top: 80px;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+.btn:hover>span {
+    background: #6ab04c;
+}
+
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+
+p {
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+@media only screen and (max-width : 600px) {
+    .navbar {
+        overflow: visible;
+    }
+
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #181818;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        color: #fff;
+    }
+
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .show {
+        max-height: 500px;
+    }
+}
+
+
+@font-face {
+    font-family: WaltoGraph;
+    src: url(fontes/waltographUI.ttf);
+}
+
+.pizza {
+    font-family: WaltoGraph !important;
+    color: #fff;
+    margin-left: 55px;
+}
+
+.pizza:hover{
+    color: #6ab04c;
+    animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+    from {
+        color: #6ab04c;
+    }
+    10% {
+        color: #00ff00;
+    }
+    50% {
+        color: #0099ff;
+    }
+    75% {
+        color: #6666ff;
+    }
+    100% {
+        color: #ff3399;
+    }
+  }
